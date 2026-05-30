@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Checker</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main heading -->
+    <h1>Student Grade Checker</h1>
+
+    <!--  takes student name and mark -->
+    <div class="form-container">
+
+        <!-- Input for student name -->
+        <label for="studentName">Student Name</label>
+        <input type="text" id="studentName" placeholder="e.g. Faith Tsemi">
+
+        <!-- Input for student mark -->
+        <label for="studentMark">Student Mark (0 - 100)</label>
+        <input type="number" id="studentMark" placeholder="e.g. 75" min="0" max="100">
+
+        <!-- Submit button triggers the checkGrade function -->
+        <button onclick="checkGrade()">Submit</button>
+
+    </div>
+
+    <!-- shows pass or fail after submit -->
+    <div id="result"></div>
+
+    <!-- list of all submitted students -->
+    <div class="list-container">
+        <h2>Submitted Students</h2>
+        <ul id="studentList"></ul>
+    </div>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
